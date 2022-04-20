@@ -1,0 +1,2 @@
+"use strict";function e(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("react"));exports.ToggleButton=function(e){var n=e.onSelect,r=e.items,c=e.selectedIdx;return t.default.createElement("div",{className:"btn-container"},r.map((function(e,r){return t.default.createElement("div",{key:"toggle"+r,className:"text "+(r===c?"active":" "),onClick:function(){return function(e){n(e)}(r)}},e)})))};
+//# sourceMappingURL=index.js.map
