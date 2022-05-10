@@ -3,9 +3,10 @@ interface ToggleButtonProps {
     onSelect: (index: number) => void;
     items: string[];
     selectedIdx: number;
-    className?: string;
+    containerClass?: string;
+    toggleClass?: string;
 }
 
-declare const ToggleButton: ({ onSelect, items, selectedIdx }: ToggleButtonProps) => JSX.Element;
+declare const ToggleButton: ({ onSelect, items, toggleClass, containerClass, selectedIdx: selectedIdxProps, }: ToggleButtonProps) => JSX.Element;
 
 export { ToggleButton };

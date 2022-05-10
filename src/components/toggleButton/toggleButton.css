@@ -4,9 +4,11 @@
     border-radius: 8.91px;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .text {
+    flex: 1;
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
@@ -14,6 +16,23 @@
     text-align: center;
     border: none;
     color: black;
+    padding: 10px 5px;
+    z-index: 1;
+}
+
+.toggle {
+    padding: 10px 5px;
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: 1px;
+    bottom: 1px;
+    /*left: 0px;*/
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 6.93px;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .text:hover,
@@ -21,14 +40,10 @@
 .text:active
 {
     border: none;
-    color: rgba(0, 0, 0, 0.45)
+    color: black;
 }
 
 .text.active {
     color: black;
     font-weight: 700;
-    background: white;
-    border: 0.5px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
-    border-radius: 6.93px;
 }
