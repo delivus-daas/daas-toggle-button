@@ -25,8 +25,8 @@ const ToggleButton = ({
       <div
         className={"toggle " + toggleClass}
         style={{
-          width: `calc(100%/${items.length})`,
-          left: `calc(${selectedIdx}*100%/${items.length})`,
+          width: `calc(100%/${items?.length})`,
+          left: `calc(${selectedIdx}*100%/${items?.length})`,
         }}
       />
       {items.map((item, idx) => (

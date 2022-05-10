@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import external from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
-// import babel from '@rollup/plugin-babel';
+import babel from '@rollup/plugin-babel';
 import autoprefixer from 'autoprefixer'
 import sass from 'node-sass'
 
@@ -32,10 +32,10 @@ export default [{
         commonjs(),
         typescript({ tsconfig: './tsconfig.json' }),
         terser(),
-        // babel({ //새로 추가
-        //     exclude: 'node_modules/**',
-        //     babelHelpers: 'bundled',
-        // }),
+        babel({
+            exclude: 'node_modules/**',
+            babelHelpers: 'bundled',
+        }),
         postcss({
             preprocessor: (content, id) => new Promise((res) => {
                 const result = sass.renderSync({ file: id })

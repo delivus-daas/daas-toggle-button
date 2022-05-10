@@ -19,5 +19,5 @@ Primary.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   selectedIdx: 1,
-  items: ["업 신청", "상차 대기", "완한 업무"],
+  items: ["업 신청", "상차 대기", "반납 업무", "완한 업무"],
 };
