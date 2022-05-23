@@ -14,8 +14,6 @@
     "build": "tsc",
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
