@@ -4,4 +4,5 @@ export interface ToggleButtonProps {
   selectedIdx: number;
   containerClass?: string;
   toggleClass?: string;
+  textClass?: string;
 }

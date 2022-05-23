@@ -7,6 +7,7 @@ const ToggleButton = ({
   items,
   toggleClass,
   containerClass,
+  textClass,
   selectedIdx: selectedIdxProps,
 }: ToggleButtonProps) => {
   const [selectedIdx, setSelectedIdx] = useState(selectedIdxProps);
@@ -32,7 +33,9 @@ const ToggleButton = ({
       {items.map((item, idx) => (
         <div
           key={"toggle" + idx}
-          className={"text " + (idx === selectedIdx ? "active" : " ")}
+          className={
+            textClass + " text " + (idx === selectedIdx ? "active" : " ")
+          }
           onClick={() => handleClick(idx)}
         >
           {item}
