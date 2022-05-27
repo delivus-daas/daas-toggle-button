@@ -12,13 +12,13 @@ yarn install
 
 ## Usage
 
-```build command
+### Build command
 yarn build-storybook
 
-```testing command
+### Testing command
 yarn test-storybook
 
-```run command
+### Run command
 yarn storybook
 
 ```
